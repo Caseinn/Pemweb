@@ -30,5 +30,3 @@ Mata kuliah Pemrograman Web membahas dasar-dasar dan teknologi yang digunakan da
 4. Python Official Docs - [https://docs.python.org/3/](https://docs.python.org/3/)
 5. ReactJS Documentation - [https://react.dev/](https://react.dev/)
 
-## 📌 Lisensi
-Dokumen ini tersedia di bawah lisensi MIT.
