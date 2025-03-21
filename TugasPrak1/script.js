@@ -1,3 +1,9 @@
+// 1. Buatlah aplikasi to-do list sederhana. Style tampilan tidak menjadi penilaian, fokus utama pada fungsionalitas JavaScript, dengan kriteria:
+// Menambahkan item baru
+// Menandai item sebagai selesai
+// Menghapus item
+// Menyimpan data ke localStorage
+
 class TodoApp {
     constructor() {
         this.todoList = JSON.parse(localStorage.getItem("todos")) || [];
@@ -61,6 +67,7 @@ document.getElementById("todo-form").addEventListener("submit", function(event) 
     taskInput.value = "";
 });
 
+// 2. Modifikasi kalkulator pada langkah 5 untuk mendukung operasi matematika tambahan seperti pangkat, akar kuadrat, dan modulus.
 function hitungKalkulator(angka1, angka2, operasi) {
     switch (operasi) {
         case "tambah": return angka1 + angka2;
@@ -74,11 +81,16 @@ function hitungKalkulator(angka1, angka2, operasi) {
     }
 }
 
+// 3. Buatlah sebuah fungsi untuk memvalidasi form input dengan kriteria:
+// Nama harus lebih dari 3 karakter
+// Email harus valid
+// Password harus minimal 8 karakter
+
 document.querySelectorAll("#validation-form input").forEach(input => {
-    input.addEventListener("input", validateForm);
+    input.addEventListener("input", validasiForm);
 });
 
-function validateForm() {
+function validasiForm() {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const password = document.getElementById("password");
